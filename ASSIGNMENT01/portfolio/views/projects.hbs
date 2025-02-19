@@ -1,0 +1,97 @@
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+/* Projects Section Styling */
+.projects-section {
+    padding: 50px 0;
+    background-color:  rgb(206, 182, 94);
+    display: flex;                /* Use Flexbox for centering */
+    flex-direction: column;       /* Stack items vertically */
+    align-items: center;          /* Center align the content */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projects-section .title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+.project-container {
+    display: flex;                /* Use Flexbox to align cards horizontally */
+    flex-wrap: wrap;             /* Allow cards to wrap to the next line */
+    justify-content: center;      /* Center align the cards */
+    gap: 20px;                   /* Spacing between cards */
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;                /* Fixed width for each card */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners for top */
+}
+
+.project-card h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: darkred; /* Change color on hover */
+}
+
+/* Add hover effect for the project cards */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+ </style>
+<section class="projects-section">
+    <h2 class="title">My Projects</h2>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="/images/cab.jpg" alt="Project 1">
+            <h2>Cab management System</h2>
+            <p>A cab management system app facilitates efficient booking and dispatching of rides. It incorporates GPS tracking, real-time updates, and secure payment options, ensuring seamless communication between drivers and passengers.</p>
+            <a href="https://github.com/Nihar032005/Cab-Management-System" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="/images/magzine.jpg" alt="Project 2">
+            <h2>Emulating-a-Print-Out</h2>
+            <p> Recreating of magzine page into a cross-functional web page by designing a new CSS layout. </p>
+            <a href="https://github.com/Krishpzs7/Emulating-a-Print-Out" target="_blank">View Project</a>
+        </div>
+
+     
+
+        <!-- Add more project cards as needed -->
+    </div>
+</section>
